@@ -1,0 +1,20 @@
+@import '~@angular/material/theming';
+// @import '~animate.css/animate.min';
+
+@include mat-core();
+
+$icasei-teste-frontend-primary: mat-palette($mat-red);
+$icasei-teste-frontend-accent: mat-palette($mat-pink, A200, A100, A400);
+
+$icasei-teste-frontend-warn: mat-palette($mat-yellow);
+
+$icasei-teste-frontend-theme: mat-light-theme($icasei-teste-frontend-primary, $icasei-teste-frontend-accent, $icasei-teste-frontend-warn);
+
+@include angular-material-theme($icasei-teste-frontend-theme);
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.full-width {
+  width: 100%;
+}
